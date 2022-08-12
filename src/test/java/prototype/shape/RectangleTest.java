@@ -11,7 +11,7 @@ public class RectangleTest {
         Rectangle initialRectangle = new Rectangle();
 
         // When
-        Rectangle clonedRectangle = initialRectangle.clone();
+        Shape clonedRectangle = initialRectangle.clone();
 
         // Then
         assertEquals(initialRectangle, clonedRectangle);

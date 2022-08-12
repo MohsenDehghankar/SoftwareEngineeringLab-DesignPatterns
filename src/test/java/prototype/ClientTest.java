@@ -1,6 +1,9 @@
 package prototype;
 
 import org.junit.jupiter.api.Test;
+import prototype.shape.Shape;
+
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,6 +17,6 @@ public class ClientTest {
         List<Shape> operationResult = client.operation();
 
         // Then
-        assertArrayEquals(client.initialShapes, operationResult);
+        assertArrayEquals(client.getInitialShapes().toArray(), operationResult.toArray());
     }
 }

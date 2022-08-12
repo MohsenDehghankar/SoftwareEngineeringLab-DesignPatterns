@@ -11,7 +11,7 @@ public class CircleTest {
         Circle initialCircle = new Circle();
 
         // When
-        Circle clonedCircle = initialCircle.clone();
+        Shape clonedCircle = initialCircle.clone();
 
         // Then
         assertEquals(initialCircle, clonedCircle);
