@@ -1,5 +1,9 @@
 package abstractfactory.factory;
 
+import abstractfactory.product.flower.AbstractFlower;
+import abstractfactory.product.flower.JapaneseFlower;
+import abstractfactory.product.tree.AbstractTree;
+import abstractfactory.product.tree.JapaneseTree;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
