@@ -1,0 +1,19 @@
+package prototype.shape;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CircleTest {
+    @Test
+    void whenCloningTheCircle_returnedObjectShouldBeEqualToInitialObject() {
+        // Given
+        Circle initialCircle = new Circle();
+
+        // When
+        Circle clonedCircle = initialCircle.clone();
+
+        // Then
+        assertEquals(initialCircle, clonedCircle);
+    }
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="abstractfactory.factory.JapaneseGardenCreatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-12T08:31:15" hostname="mohsen-ASUS" time="0.001">
+<testsuite name="abstractfactory.factory.JapaneseGardenCreatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-12T08:32:18" hostname="mohsen-ASUS" time="0.0">
   <properties/>
   <testcase name="whenCallingCreateTreeMethod_shouldReturnCorrectTreeType()" classname="abstractfactory.factory.JapaneseGardenCreatorTest" time="0.0"/>
   <testcase name="whenCallingCreateFlowerMethod_shouldReturnCorrectFlowerType()" classname="abstractfactory.factory.JapaneseGardenCreatorTest" time="0.0"/>
