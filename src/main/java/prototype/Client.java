@@ -1,15 +1,20 @@
 package prototype;
 
+import prototype.shape.Circle;
+import prototype.shape.Rectangle;
 import prototype.shape.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
-    private List<Shape> initialShapes;
+    private final List<Shape> initialShapes;
 
     public Client() {
-        this.initialShapes = new ArrayList<>();
+        this.initialShapes = List.of(
+                new Circle(),
+                new Rectangle()
+        );
     }
 
     public List<Shape> getInitialShapes() {
@@ -17,6 +22,12 @@ public class Client {
     }
 
     public List<Shape> operation() {
-        throw new RuntimeException();
+        List<Shape> clonedShapes = new ArrayList<>();
+
+        for (Shape initialShape : initialShapes) {
+            clonedShapes.add(initialShape.clone());
+        }
+
+        return clonedShapes;
     }
 }

@@ -14,6 +14,6 @@ public class RectangleTest {
         Shape clonedRectangle = initialRectangle.clone();
 
         // Then
-        assertEquals(initialRectangle, clonedRectangle);
+        assert initialRectangle.equals(clonedRectangle);
     }
 }

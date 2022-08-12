@@ -14,6 +14,6 @@ public class CircleTest {
         Shape clonedCircle = initialCircle.clone();
 
         // Then
-        assertEquals(initialCircle, clonedCircle);
+        assert initialCircle.equals(clonedCircle);
     }
 }
